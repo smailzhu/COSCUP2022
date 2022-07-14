@@ -1,0 +1,3 @@
+[submodule "Bulls-and-Cows-Solver"]
+	path = Bulls-and-Cows-Solver
+	url = git@github.com:smailzhu/Bulls-and-Cows-Solver.git
