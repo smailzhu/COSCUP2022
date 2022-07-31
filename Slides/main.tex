@@ -2,6 +2,7 @@
 % 10pt, handout
 \usetheme[progressbar=frametitle]{metropolis}
 
+% https://tony-scialo.github.io/slides-functional-programing/
 
 % \usepackage{background}
 % \backgroundsetup{
@@ -124,6 +125,12 @@
 \begin{frame}{Table of contents}
   \setbeamertemplate{section in toc}[sections numbered]
   \tableofcontents[hideallsubsections]
+
+  \begin{figure}
+%   \centering
+  \includegraphics[width=.35\textwidth,keepaspectratio] {slido_coscup22-fp.pdf}
+  \caption{sli.do/coscup22-fp}
+  \end{figure}  
 \end{frame}
 
 \section{What is Functional Programming}
@@ -206,8 +213,14 @@
 
 \begin{frame}{What is Functional Programming?}
 In a nutshell,
-\Huge{
-NO SIDE EFFECTS!}
+{\Huge NO SIDE EFFECTS!}
+
+\pause
+\begin{exampleblock}{}
+  {\large ``副作用就像是謊言。''}
+  \vskip5mm
+  \hspace*\fill{\small--- 無瑕的程式碼, Robert C. Martin}
+\end{exampleblock}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -301,6 +314,16 @@ State cannot change after creation
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\plain{{\Huge ~}\\\bigskip 
+  \begin{figure}
+  \centering
+  \includegraphics[width=.8\textwidth,keepaspectratio] {cat.jpg} \caption{Quite cute, right?}
+  \end{figure}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \plain{{\Huge Questions?}\\\bigskip 
   \begin{figure}
   \centering
@@ -320,7 +343,7 @@ State cannot change after creation
 \begin{itemize}
     \item Secret number: 4271
     \item Opponent's try: 1234
-    \item Answer: 1A2B (1 bull and 2 cows)\\If the matching digits are in their right positions, they are "bulls", if in different positions, they are "cows".
+    \item Answer: 1A2B (1 bull and 2 cows)\\If the matching digits are in their right positions, they are ``bulls'', if in different positions, they are ``cows''.
 \end{itemize}
 
 \end{frame}
@@ -329,11 +352,11 @@ State cannot change after creation
 \begin{frame}{Bulls and Cows Example}
 Secret number: \texttt{9527}
 \begin{itemize}[<+(1)->]
-    \item I guess ``34\underline{72}'' $\rightarrow$ 0A2B
-    \item I guess ``\underline{2}064'' $\rightarrow$ 0A1B
-    \item I guess ``\alert{9}\underline{7}48'' $\rightarrow$ 1A1B
-    \item I guess ``1\alert{5}4\alert{7}'' $\rightarrow$ 2A0B
-    \item I guess ``134\underline{9}'' $\rightarrow$ 0A1B
+    \item I guess ``\texttt{34\underline{72}}'' $\rightarrow$ 0A2B
+    \item I guess ``\texttt{\underline{2}064}'' $\rightarrow$ 0A1B
+    \item I guess ``\texttt{\alert{9}\underline{7}48}'' $\rightarrow$ 1A1B
+    \item I guess ``\texttt{1\alert{5}4\alert{7}}'' $\rightarrow$ 2A0B
+    \item I guess ``\texttt{134\underline{9}}'' $\rightarrow$ 0A1B
     \item ``9527''
 \end{itemize}
 
@@ -556,14 +579,15 @@ checkA (x:xs) (y:ys)
 \end{frame}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\plain{%{\Huge Questions?}\\\bigskip 
-  \begin{figure}
-  \centering
-  \includegraphics[width=.35\textwidth,keepaspectratio] {rainbow_cat.pdf}
-%   \caption{sli.do/coscup22-fp}
-  \end{figure}
-}
+% \plain{%{\Huge Questions?}\\\bigskip 
+%   \begin{figure}
+%   \centering
+%   \includegraphics[width=.35\textwidth,keepaspectratio] {rainbow_cat.pdf}
+% %   \caption{sli.do/coscup22-fp}
+%   \end{figure}
+% }
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
